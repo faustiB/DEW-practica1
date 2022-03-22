@@ -1,43 +1,46 @@
 .container {
     display: flex;
     flex-direction: row;
+    font-family: Calibri, serif;
+    background-color: darkcyan;
+    justify-content: space-around;
+    gap: 50vw;
+
 }
 
+.dropdown{
+    background-color: burlywood;
+}
+
+.dropdown-content{
+    display:none;
+}
+
+.dropdown:hover .dropdown-content{
+    background-color: brown;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.dropdown-content a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    background-color: grey;
+
+}
 .profile-icon {
     height: 100px;
     width: 100px;
 }
 
-.dropdown {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
+.profile-icon:hover {
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    padding: 10px 14px;
-    margin-top: 84px; /*TODO: preguntar a Dani como hacer que se muestre debajo el dropdown*/
-
-}
-
-.dropdown-content ul {
-    list-style: none;
-}
-
-.dropdown-content li {
-    margin: 20px;
-}
-
-.dropdown-content a {
-    padding: 30px;
-    text-decoration: none;
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
 }
