@@ -1,0 +1,139 @@
+body {
+    background-color: #EFEFEF;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin-right: -10%;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.party-photo {
+    width: 60%;
+}
+
+h1 {
+    font-family: "Brush Script MT", serif;
+    font-size: 100px;
+}
+
+hr {
+    width: 60%;
+}
+
+.flex-form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+form {
+    border: 3px solid black;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: lightgray;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    border-radius: 8%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.flex-form-register {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 1%;
+}
+
+.flex-items-register:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin-left: 1%;
+}
+
+a {
+    font-family: Verdana, serif;
+}
+
+a:visited { text-decoration: none; color:navy;}
+
+.flex-container-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 1px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-google {
+    background: #dd4b39;
+}
