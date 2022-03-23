@@ -78,46 +78,46 @@ body {
     margin-top: 1%;
 }
 
-.flex-form-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-}
-
-form {
-    border: 3px solid black;
-}
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 200px 12px 40px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: lightgray;
-    color: white;
-    padding: 14px 20px;
-    margin: 10px 0;
-    border: none;
-    cursor: pointer;
-    width: 10%;
-    border-radius: 8%;
-}
 
 button:hover {
     opacity: 0.8;
 }
 
+.flex-container-boxes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 
+    margin-top: 20%;
+}
 
+.flex-container div{
+    flex: 1;
+}
 
+.flex-container-boxes a{
+    border: groove #f2e6d9;
+    border-radius: 10%;
+    font-style: italic;
+    padding: 2em;
+    text-decoration: none;
+    font-family: "Calibri", serif;
+    font-size: xx-large;
+    background: #f9f2ec;
+    color:black;
+}
+
+.flex-container-boxes a:hover{
+  opacity: 0.5;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    margin-bottom: 2%;
+    bottom: 0;
+
+}
 .fa {
     padding: 10px;
     font-size: 30px;
