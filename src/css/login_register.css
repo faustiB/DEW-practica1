@@ -59,7 +59,7 @@ form {
 
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 200px 12px 40px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -136,4 +136,14 @@ a:visited { text-decoration: none; color:navy;}
 
 .fa-google {
     background: #dd4b39;
+}
+
+.flex-container-register {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 150px;
 }
