@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Account Configuration</title>
+    <meta name="description" content="Account Configuration">
+    <meta name="author" content="Fao & Guillem">
+    <link rel="stylesheet" href="css/account_config.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="container"><!--Header con el título de la web y el menu de usuario-->
+    <div class="header-title">
+        <h1>OpenEvents</h1>
+    </div>
+    <div class="dropdown">
+        <img class="profile-icon" alt="Profile picture" src="media/images/profile_picture.webp">
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Account stats</a>
+            <a href="account_config.html">Account configuration</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+</header>
+
+<div class="flex-container-update">
+    <h2>Update Profile</h2>
+</div>
+
+<div class="flex-form-container" >
+
+    <label>
+        <input type="text" placeholder="Name" name="name" required>
+    </label>
+    <label>
+        <input type="text" placeholder="Last Name" name="lastname" required>
+    </label>
+    <label>
+        <input type="text" placeholder="Date of birth" name="date" required>
+    </label>
+    <label>
+        <input type="text" placeholder="Email" name="email" required>
+    </label>
+
+
+</div>
+
+<div class="flex-container-update">
+    <h2>Change password</h2>
+</div>
+
+
+<div class="flex-form-container" >
+
+    <label>
+        <input type="password" placeholder="Password" name="password" required>
+    </label>
+    <label>
+        <input type="password" placeholder="Confirm Password" name="confirmpassword" required>
+    </label>
+
+    <button type="submit">Submit</button>
+
+</div>
+
+
+
+<footer>
+    <div class="flex-container-icons">
+        <div><a href="#" class="fa fa-facebook" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-twitter" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-google" style="color: white"></a></div>
+    </div>
+</footer>
+</body>
+</html>
