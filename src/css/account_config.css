@@ -7,8 +7,18 @@
 }
 
 .header-title {
+    display: flex;
+    flex-direction: column;
     font-family: "Brush Script MT", serif;
-    font-size: xx-large;
+    font-size: 4em;
+    text-decoration: none;
+    justify-content: center;
+    width: 5%;
+}
+
+.header-title a{
+    text-decoration: none;
+    color: black;
 }
 
 .dropdown{
@@ -103,10 +113,6 @@ button {
 
 button:hover {
     opacity: 0.8;
-}
-
-a {
-    font-family: Verdana, serif;
 }
 
 .fa {
