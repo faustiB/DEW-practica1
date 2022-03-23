@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50vw;
+    height: 110px;
+}
+
+.header-title {
+    font-family: "Brush Script MT", serif;
+    font-size: xx-large;
+}
+
+.dropdown{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    font-family: Verdana, serif;
+}
+
+.dropdown-content{
+    display:none;
+}
+
+.dropdown:hover .dropdown-content{
+    background-color: ghostwhite;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.dropdown-content a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    background-color: #8080801c;
+}
+
+.profile-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+.flex-container-update{
+    font-family: Calibri, serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-form-register {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 1%;
+}
+
+.flex-form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+form {
+    border: 3px solid black;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 200px 12px 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: lightgray;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 8%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    font-family: Verdana, serif;
+}
+
+
+table {
+    font-family: Calibri, serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 1px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-google {
+    background: #dd4b39;
+}
+.flex-container-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-right: 5%;
+}
