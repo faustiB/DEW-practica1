@@ -1,15 +1,20 @@
 .container {
     display: flex;
     flex-direction: row;
-    font-family: Calibri, serif;
-    background-color: darkcyan;
     justify-content: space-around;
     gap: 50vw;
+    height: 110px;
+}
 
+.header-title {
+    font-family: "Brush Script MT", serif;
+    font-size: xx-large;
 }
 
 .dropdown{
-    background-color: burlywood;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    font-family: Verdana, serif;
 }
 
 .dropdown-content{
@@ -17,8 +22,8 @@
 }
 
 .dropdown:hover .dropdown-content{
-    background-color: brown;
-    text-align: center;
+    background-color: ghostwhite;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,14 +38,15 @@
 }
 
 .dropdown-content a:hover{
-    background-color: grey;
-
+    background-color: #8080801c;
 }
+
 .profile-icon {
     height: 100px;
     width: 100px;
+    border-radius: 50%;
 }
 
-.profile-icon:hover {
-
+body {
+    background-color: #EFEFEF;
 }
