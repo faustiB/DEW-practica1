@@ -5,7 +5,7 @@
     <title>TEMPLATE</title>
     <meta name="description" content="TEMPLATE">
     <meta name="author" content="Fao & Guillem">
-    <link rel="stylesheet" href="css/main_page.css">
+    <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,7 +23,39 @@
         </div>
     </div>
 </header>
+<nav class="navbar">
 
+    <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000000" stroke-width="5"/>
+            </svg>
+        </a>
+    </span>
+</nav>
+<div id="side-menu" class="side-nav" >
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">List of friends</a>
+    <a href="#">Friends management</a>
+</div>
+<div id="main">
+    <h1>CONTENT OF WEBSITE</h1>
+</div>
+
+
+<script>
+
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px'
+        document.getElementById('main').style.marginLeft = '250px'
+    }
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0'
+        document.getElementById('main').style.marginLeft = '0'
+    }
+</script>
 
 <footer>
     <div class="flex-container-icons">
