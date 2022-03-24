@@ -157,6 +157,62 @@ button:hover {
     transition: 0.5s;
     font-family: Calibri, serif;
 }
+#main h1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+}
+#main section article{
+    display: flex;
+    margin-left: 20%;
+    border-style:groove ;
+    width: 60%;
+
+}
+.flex-friend-data{
+    justify-content: flex-start;
+}
+
+.flex-list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+
+
+}
+.remove-friend-link{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4%;
+    border-color: #b30007;
+    background-color:#b30000;
+    border-style:groove;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 25%;
+}
+
+.remove-friend-link:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.friend-photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
 
 .fa {
     padding: 10px 10px 10px 30px;
