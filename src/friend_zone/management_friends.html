@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TEMPLATE</title>
+    <meta name="description" content="TEMPLATE">
+    <meta name="author" content="Fao & Guillem">
+    <link rel="stylesheet" href="../css/management_friends.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="container"><!--Header con el título de la web y el menu de usuario-->
+    <div class="header-title">
+        <a href="../main_page.html">OpenEvents</a>
+    </div>
+    <div class="dropdown">
+        <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="../account_stats.html">Account stats</a>
+            <a href="../account_config.html">Account configuration</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+</header>
+<nav class="navbar">
+
+    <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000000" stroke-width="5"/>
+            </svg>
+        </a>
+    </span>
+</nav>
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="list_friends.html">List of friends</a>
+    <a href="management_friends.html">Friends management</a>
+</div>
+<div id="main">
+    <h1>Friends management</h1>
+    <div class="flex-search-container">
+        <label>
+            <input type="text" placeholder="Username/Friend name" name="name" required>
+        </label>
+        <button type="submit">Submit</button>
+    </div>
+
+    <section>
+        <article>
+            <!--//TODO: Change profile picture with the correct one-->
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+        <article>
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+        <article>
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+    </section>
+    <h2>Pending friend requests</h2>
+    <section>
+        <article>
+            <!--//TODO: Change profile picture with the correct one-->
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+        <article>
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+        <article>
+            <div class="flex-friend-data">
+                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
+                <h4>Friend Name</h4>
+                <p>email@email.com</p>
+                <button type="submit">Add</button>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+<script>
+
+    function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px'
+        document.getElementById('main').style.marginLeft = '250px'
+    }
+
+    function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0'
+        document.getElementById('main').style.marginLeft = '0'
+    }
+</script>
+
+<footer>
+    <div class="flex-container-icons">
+        <div><a href="#" class="fa fa-facebook" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-twitter" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-google" style="color: white"></a></div>
+    </div>
+</footer>
+</body>
+</html>
