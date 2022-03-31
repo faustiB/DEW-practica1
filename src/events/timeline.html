@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Create Event</title>
-    <meta name="description" content="Create Event">
+    <title>Timeline</title>
+    <meta name="description" content="Timeline">
     <meta name="author" content="Fao & Guillem">
-    <link rel="stylesheet" href="../css/create_event.css">
+    <link rel="stylesheet" href="../css/timeline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -34,54 +34,67 @@
         </a>
     </span>
 </nav>
-<div id="side-menu" class="side-nav" >
+<div id="side-menu" class="side-nav">
     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
     <a href="create_event.html">Create Event</a>
     <a href="timeline.html">Timeline</a>
 </div>
 <main id="main">
-    <h1>Create Event</h1>
-    <div class="flex-form-container">
-        <!--TODO: Do we want to add the icons in front of the different form fields?-->
-        <label>
-            <input type="text" placeholder="Name" name="name" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Image of event" name="picevent" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Location" name="location" required>
-        </label>
-        <label>
-            <textarea name="description">Description of Event</textarea>
-        </label>
-        <label>
-            <input type="text" placeholder="Number of Participants" name="participants" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Type of Event" name="Type of Event" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Date of Event" name="date" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Starting Hour" name="starthour" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Finishing Hour" name="finhour" required>
-        </label>
-        <button type="submit">Create Event</button>
+    <h1>Timeline</h1>
+    <div class="flex-timeline-container">
+        <div class="flex-search-container">
+            <label>
+                <input type="text" placeholder="Username/Friend name" name="name" required>
+            </label>
+            <button type="submit">Search</button>
+        </div>
+        <section class="flex-events-timeline-container">
+            <!--<a href="event_detail.html" class="flex-event-detail">TODO: Crear página de detalle.-->
+            <a href="#" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+            <!--<a href="event_detail.html" class="flex-event-detail">TODO: Crear página de detalle.-->
+            <a href="#" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+            <!--<a href="event_detail.html" class="flex-event-detail">TODO: Crear página de detalle.-->
+            <a href="#" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+        </section>
     </div>
 </main>
 
 
 <script>
 
-    function openSlideMenu(){
+    function openSlideMenu() {
         document.getElementById('side-menu').style.width = '250px'
         document.getElementById('main').style.marginLeft = '250px'
     }
-    function closeSlideMenu(){
+
+    function closeSlideMenu() {
         document.getElementById('side-menu').style.width = '0'
         document.getElementById('main').style.marginLeft = '0'
     }
