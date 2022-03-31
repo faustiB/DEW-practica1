@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create Event</title>
+    <meta name="description" content="Create Event">
+    <meta name="author" content="Fao & Guillem">
+    <link rel="stylesheet" href="../css/create_event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="container"><!--Header con el título de la web y el menu de usuario-->
+    <div class="header-title">
+        <a href="../main_page.html">OpenEvents</a>
+    </div>
+    <div class="dropdown">
+        <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="../account_stats.html">Account stats</a>
+            <a href="../account_config.html">Account configuration</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+</header>
+<nav class="navbar">
+    <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000000" stroke-width="5"/>
+            </svg>
+        </a>
+    </span>
+</nav>
+<div id="side-menu" class="side-nav" >
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="create_event.html">Create Event</a>
+    <a href="#">Timeline</a>
+</div>
+<main id="main">
+    <h1>Create Event</h1>
+    <div class="flex-form-container">
+        <!--TODO: Do we want to add the icons in front of the different form fields?-->
+        <label>
+            <input type="text" placeholder="Name" name="name" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Image of event" name="picevent" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Location" name="location" required>
+        </label>
+        <label>
+            <textarea name="description">Description of Event</textarea>
+        </label>
+        <label>
+            <input type="text" placeholder="Number of Participants" name="participants" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Type of Event" name="Type of Event" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Date of Event" name="date" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Starting Hour" name="starthour" required>
+        </label>
+        <label>
+            <input type="text" placeholder="Finishing Hour" name="finhour" required>
+        </label>
+        <button type="submit">Create Event</button>
+    </div>
+</main>
+
+
+<script>
+
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px'
+        document.getElementById('main').style.marginLeft = '250px'
+    }
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0'
+        document.getElementById('main').style.marginLeft = '0'
+    }
+</script>
+
+<footer>
+    <div class="flex-container-icons">
+        <div><a href="#" class="fa fa-facebook" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-twitter" style="color: white"></a></div>
+        <div><a href="#" class="fa fa-google" style="color: white"></a></div>
+    </div>
+</footer>
+</body>
+</html>
