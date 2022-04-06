@@ -78,26 +78,31 @@ body {
     margin-top: 1%;
 }
 
-
 button:hover {
     opacity: 0.8;
 }
 
 .flex-container-boxes{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
-
     margin-top: 20%;
+    height: 30vh;
 }
 
-.flex-container div{
-    flex: 1;
+@media screen and (max-width: 600px) {
+    .flex-container-boxes{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10%;
+        gap: 10px
+    }
 }
 
 .flex-container-boxes a{
     border: groove #f2e6d9;
-    border-radius: 10%;
+    border-radius: 10px;
     font-style: italic;
     padding: 2em;
     text-decoration: none;
