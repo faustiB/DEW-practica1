@@ -117,12 +117,12 @@ button:hover {
 }
 
 footer{
-    position: absolute;
-    width: 100%;
-    margin-bottom: 2%;
+    position: fixed;
+    padding: 10px 10px 0 10px;
     bottom: 0;
-
+    width: 100%;
 }
+
 .fa {
     padding: 10px;
     font-size: 30px;
@@ -144,11 +144,11 @@ footer{
 }
 .flex-container-icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
     align-content: stretch;
     margin-top: 5%;
-    margin-right: 5%;
+    margin-right: 2%;
 }

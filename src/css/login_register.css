@@ -118,6 +118,13 @@ a:visited { text-decoration: none; color:navy;}
     margin-right: 5%;
 }
 
+footer{
+    position: fixed;
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+    width: 100%;
+}
+
 .fa {
     padding: 10px;
     font-size: 30px;
@@ -138,12 +145,13 @@ a:visited { text-decoration: none; color:navy;}
     background: #dd4b39;
 }
 
-.flex-container-register {
+.flex-container-icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: flex-end;
     align-content: stretch;
-    height: 150px;
+    margin-top: 5%;
+    margin-right: 2%;
 }

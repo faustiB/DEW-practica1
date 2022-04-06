@@ -206,6 +206,12 @@ button:hover {
     flex: 25;
 }
 
+footer{
+    position: fixed;
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+    width: 100%;
+}
 
 .fa {
     padding: 10px;
@@ -228,11 +234,11 @@ button:hover {
 }
 .flex-container-icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
     align-content: stretch;
     margin-top: 5%;
-    margin-right: 5%;
+    margin-right: 2%;
 }
