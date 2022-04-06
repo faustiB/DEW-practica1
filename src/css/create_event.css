@@ -1,5 +1,3 @@
-@import "normalize.css";
-
 .container {
     display: flex;
     flex-direction: row;
