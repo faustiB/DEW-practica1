@@ -26,6 +26,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "html-minifier": "^4.0.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "normalize.css": "^8.0.1"
   }
 }
