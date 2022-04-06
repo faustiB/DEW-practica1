@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Friends Management</title>
-    <meta name="description" content="Friends Management">
+    <title>List of friends</title>
+    <meta name="description" content="List of friends">
     <meta name="author" content="Fao & Guillem">
     <meta name="keywords" content="Event, Manager, Open, Events, OpenEvents, Activity, Friends, Friend Zone">
     <meta name="robots" content="nofollow">
-    <link rel="stylesheet" href="../css/management_friends.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../../css/list_friends.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
         <a href="../main_page.html">OpenEvents</a>
     </div>
     <div class="dropdown">
-        <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
+        <img class="profile-icon" alt="Profile picture" src="../../media/images/profile_picture.webp">
         <div class="dropdown-content">
             <a href="../profile.html">Profile</a>
             <a href="../account_stats.html">Account stats</a>
@@ -42,68 +42,50 @@
         <a href="management_friends.html">Friends management</a>
     </div>
 </nav>
+
 <div id="main">
-    <h1>Friends management</h1>
-    <div class="flex-search-container">
-        <label>
-            <input type="text" placeholder="Username/Friend name" name="name" required>
-        </label>
-        <button type="submit">Submit</button>
-    </div>
+    <h1>List of friends</h1>
 
     <section>
         <article>
+
             <!--//TODO: Change profile picture with the correct one-->
+            <img class="friend-photo" alt="Friend photo" src="../../media/images/profile_picture.webp">
             <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
+                <h2>Name Surname</h2>
+                <div class="flex-list-container">
+                    <p>email@email.com</p>
+                    <a class="remove-friend-link" href="#">Remove as a friend</a>
+                </div>
             </div>
+
         </article>
         <article>
-            <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
-            </div>
-        </article>
-        <article>
-            <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
-            </div>
-        </article>
-    </section>
-    <h2>Pending friend requests</h2>
-    <section>
-        <article>
+
             <!--//TODO: Change profile picture with the correct one-->
+            <img class="friend-photo" alt="Friend photo" src="../../media/images/profile_picture.webp">
             <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
+                <h2>Name Surname</h2>
+                <div class="flex-list-container">
+                    <p>email@email.com</p>
+                    <a class="remove-friend-link" href="#">Remove as a friend</a>
+                </div>
             </div>
+
+
         </article>
         <article>
+
+            <!--//TODO: Change profile picture with the correct one-->
+            <img class="friend-photo" alt="Friend photo" src="../../media/images/profile_picture.webp">
             <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
+                <h2>Name Surname</h2>
+                <div class="flex-list-container">
+                    <p>email@email.com</p>
+                    <a class="remove-friend-link" href="#">Remove as a friend</a>
+                </div>
             </div>
-        </article>
-        <article>
-            <div class="flex-friend-data">
-                <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
-                <h4>Friend Name</h4>
-                <p>email@email.com</p>
-                <button type="submit">Add</button>
-            </div>
+
         </article>
     </section>
 </div>

@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Create Event</title>
-    <meta name="description" content="Create Event">
+    <title>Name of Event</title>
+    <meta name="description" content="Name of Event">
     <meta name="author" content="Fao & Guillem">
     <meta name="keywords" content="Event, Manager, Open, Events, OpenEvents, Activity, Friends, Friend Zone">
-    <link rel="stylesheet" href="../css/create_event.css">
+    <meta name="robots" content="nofollow">
+    <link rel="stylesheet" href="../../css/detailed_event.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <a href="../main_page.html">OpenEvents</a>
     </div>
     <div class="dropdown">
-        <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
+        <img class="profile-icon" alt="Profile picture" src="../../media/images/profile_picture.webp">
         <div class="dropdown-content">
             <a href="../profile.html">Profile</a>
             <a href="../account_stats.html">Account stats</a>
@@ -35,55 +36,46 @@
         </a>
     </span>
 
-<div id="side-menu" class="side-nav" >
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <a href="create_event.html">Create Event</a>
-    <a href="timeline.html">Timeline</a>
-</div>
+    <div id="side-menu" class="side-nav" >
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="create_event.html">Create Event</a>
+        <a href="timeline.html">Timeline</a>
+    </div>
 </nav>
 <main id="main">
-    <h1>Create Event</h1>
-    <div class="flex-form-container">
-        <!--TODO: Do we want to add the icons in front of the different form fields?-->
-        <label>
-            <input type="text" placeholder="Name" name="name" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Image of event" name="picevent" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Location" name="location" required>
-        </label>
-        <label>
-            <textarea name="description">Description of Event</textarea>
-        </label>
-        <label>
-            <input type="text" placeholder="Number of Participants" name="participants" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Type of Event" name="Type of Event" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Date of Event" name="date" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Starting Hour" name="starthour" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Finishing Hour" name="finhour" required>
-        </label>
-        <button type="submit">Create Event</button>
+    <h1>Name of Event</h1>
+    <div class="event-info">
+        <div>
+            <h2>Location</h2>
+        </div>
+        <div>
+            <img class="event-location-image" src="../../media/images/location.png" alt="Event location">
+        </div>
+        <div>
+            <h2>Starting time: 00:00h</h2>
+        </div>
+        <div>
+            <h2>Ending time: 00:00h</h2>
+        </div>
+        <div id="description-box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+        </div>
+
     </div>
 </main>
 
 
 <script>
 
-    function openSlideMenu(){
+    function openSlideMenu() {
         document.getElementById('side-menu').style.width = '250px'
         document.getElementById('main').style.marginLeft = '250px'
     }
-    function closeSlideMenu(){
+
+    function closeSlideMenu() {
         document.getElementById('side-menu').style.width = '0'
         document.getElementById('main').style.marginLeft = '0'
     }
