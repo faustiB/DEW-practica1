@@ -70,10 +70,6 @@ body {
     align-content: stretch;
 }
 
-form {
-    border: 3px solid black;
-}
-
 input[type=text], input[type=password], textarea {
     width: 100%;
     padding: 12px 200px 12px 40px;
