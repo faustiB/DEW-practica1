@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
+    "build-mac": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
+    "build-win": "",
     "start": "node app.js",
     "watch": "nodemon",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
