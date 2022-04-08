@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-mac": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
-    "build-win": "",
+    "build-win": "rmdir /s /q dist && mkdir dist\\media && xcopy /s src\\media dist\\media && npm run html-minifier && npm run css-minifier",
     "start": "node app.js",
     "watch": "nodemon",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",

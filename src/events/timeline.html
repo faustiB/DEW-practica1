@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Name of Event</title>
-    <meta name="description" content="Name of Event">
+    <title>Timeline</title>
+    <meta name="description" content="Timeline">
     <meta name="author" content="Fao & Guillem">
     <meta name="keywords" content="Event, Manager, Open, Events, OpenEvents, Activity, Friends, Friend Zone">
-    <meta name="robots" content="nofollow">
-    <link rel="stylesheet" href="../../css/detailed_event.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <a href="../main_page.html">OpenEvents</a>
     </div>
     <div class="dropdown">
-        <img class="profile-icon" alt="Profile picture" src="../../media/images/profile_picture.webp">
+        <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
         <div class="dropdown-content">
             <a href="../profile.html">Profile</a>
             <a href="../account_stats.html">Account stats</a>
@@ -43,27 +43,46 @@
     </div>
 </nav>
 <main id="main">
-    <h1>Name of Event</h1>
-    <div class="event-info">
-        <div>
-            <h2>Location</h2>
-        </div>
-        <div>
-            <img class="event-location-image" src="../../media/images/location.png" alt="Event location">
-        </div>
-        <div>
-            <h2>Starting time: 00:00h</h2>
-        </div>
-        <div>
-            <h2>Ending time: 00:00h</h2>
-        </div>
-        <div id="description-box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
-        </div>
-
+    <h1>Timeline</h1>
+    <div class="flex-timeline-container">
+        <form class="flex-search-container">
+            <label>
+                <input type="text" placeholder="Name of Event" name="name" required>
+            </label>
+            <button type="submit">Search</button>
+        </form>
+        <section class="flex-events-timeline-container">
+            <a href="detailed_event.html" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+            <a href="detailed_event.html" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+            <a href="detailed_event.html" class="flex-event-detail">
+                <div class="flex-event-data1">
+                    <h3>Name of event</h3>
+                    <p>Location</p>
+                    <p>Starting Hour</p>
+                </div>
+                <div class="flex-event-data2">
+                    <p>Description of event</p>
+                </div>
+            </a>
+        </section>
     </div>
 </main>
 
