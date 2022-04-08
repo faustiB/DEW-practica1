@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head> <!--Head de la pagina-->
     <meta charset="utf-8">
     <title>List of friends</title>
     <meta name="description" content="List of friends">
     <meta name="author" content="Fao & Guillem">
+    <!--Tags añadidos para la busqueda por palabras clave y que los motores de busqueda no sigan los enlaces-->
     <meta name="keywords" content="Event, Manager, Open, Events, OpenEvents, Activity, Friends, Friend Zone">
     <meta name="robots" content="nofollow">
+    <!---Estilos de la pagina-->
     <link rel="stylesheet" href="../css/list_friends.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +18,7 @@
     <div class="header-title">
         <a href="../main_page.html">OpenEvents</a>
     </div>
+    <!---Menu de usuario-->
     <div class="dropdown">
         <img class="profile-icon" alt="Profile picture" src="../media/images/profile_picture.webp">
         <div class="dropdown-content">
@@ -26,6 +29,7 @@
         </div>
     </div>
 </header>
+<!---Barra de navegación lateral estilo hamburger-->
 <nav class="navbar">
     <span class="open-slide">
         <a href="#" onclick="openSlideMenu()">
@@ -43,12 +47,12 @@
     </div>
 </nav>
 
+<!--Contenido de la página-->
 <div id="main">
     <h1>List of friends</h1>
-
+    <!---Tabla con la lista de amigos organizada con una section y articles dentro-->
     <section>
         <article>
-
             <!--//TODO: Change profile picture with the correct one-->
             <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
             <div class="flex-friend-data">
@@ -58,10 +62,8 @@
                     <a class="remove-friend-link" href="#">Remove as a friend</a>
                 </div>
             </div>
-
         </article>
         <article>
-
             <!--//TODO: Change profile picture with the correct one-->
             <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
             <div class="flex-friend-data">
@@ -71,11 +73,8 @@
                     <a class="remove-friend-link" href="#">Remove as a friend</a>
                 </div>
             </div>
-
-
         </article>
         <article>
-
             <!--//TODO: Change profile picture with the correct one-->
             <img class="friend-photo" alt="Friend photo" src="../media/images/profile_picture.webp">
             <div class="flex-friend-data">
@@ -85,14 +84,12 @@
                     <a class="remove-friend-link" href="#">Remove as a friend</a>
                 </div>
             </div>
-
         </article>
     </section>
 </div>
 
-
+<!--Scripts de la pagina-->
 <script>
-
     function openSlideMenu() {
         document.getElementById('side-menu').style.width = '250px'
         document.getElementById('main').style.marginLeft = '250px'
@@ -104,6 +101,7 @@
     }
 </script>
 
+<!-- Footer de la página-->
 <footer>
     <div class="flex-container-icons">
         <div><a href="#" class="fa fa-facebook" style="color: white"></a></div>
