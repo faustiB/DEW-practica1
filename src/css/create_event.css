@@ -68,10 +68,11 @@ body {
     justify-content: center;
     align-items: center;
     align-content: stretch;
+
 }
 
 input[type=text], input[type=password], textarea {
-    width: 100%;
+    width: 25%;
     padding: 12px 200px 12px 40px;
     margin: 8px 0;
     display: inline-block;

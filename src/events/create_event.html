@@ -35,43 +35,24 @@
         </a>
     </span>
 
-<div id="side-menu" class="side-nav" >
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <a href="create_event.html">Create Event</a>
-    <a href="timeline.html">Timeline</a>
-</div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="create_event.html">Create Event</a>
+        <a href="timeline.html">Timeline</a>
+    </div>
 </nav>
 <main id="main">
     <h1>Create Event</h1>
     <form class="flex-form-container">
-        <!--TODO: Do we want to add the icons in front of the different form fields?-->
-        <label>
-            <input type="text" placeholder="Name" name="name" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Image of event" name="picevent" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Location" name="location" required>
-        </label>
-        <label>
-            <textarea name="description">Description of Event</textarea>
-        </label>
-        <label>
-            <input type="text" placeholder="Number of Participants" name="participants" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Type of Event" name="Type of Event" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Date of Event" name="date" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Starting Hour" name="starthour" required>
-        </label>
-        <label>
-            <input type="text" placeholder="Finishing Hour" name="finhour" required>
-        </label>
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Image of event" name="picevent" required>
+        <input type="text" placeholder="Location" name="location" required>
+        <textarea name="description">Description of Event</textarea>
+        <input type="text" placeholder="Number of Participants" name="participants" required>
+        <input type="text" placeholder="Type of Event" name="Type of Event" required>
+        <input type="text" placeholder="Date of Event" name="date" required>
+        <input type="text" placeholder="Starting Hour" name="starthour" required>
+        <input type="text" placeholder="Finishing Hour" name="finhour" required>
         <button type="submit">Create Event</button>
     </form>
 </main>
@@ -79,11 +60,12 @@
 
 <script>
 
-    function openSlideMenu(){
+    function openSlideMenu() {
         document.getElementById('side-menu').style.width = '250px'
         document.getElementById('main').style.marginLeft = '250px'
     }
-    function closeSlideMenu(){
+
+    function closeSlideMenu() {
         document.getElementById('side-menu').style.width = '0'
         document.getElementById('main').style.marginLeft = '0'
     }
