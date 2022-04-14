@@ -54,7 +54,7 @@ hr {
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 30%;
     padding: 12px 200px 12px 40px;
     margin: 8px 0;
     display: inline-block;
@@ -94,6 +94,16 @@ button:hover {
     order: 0;
     margin-left: 1%;
 }
+
+.flex-items h1 {
+    font-size:5.5em;
+}
+
+#title-register{
+    font-size:5.5em;
+    text-align: center;
+}
+
 
 a {
     font-family: Verdana, serif;
