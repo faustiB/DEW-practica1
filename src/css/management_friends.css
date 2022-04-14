@@ -129,7 +129,7 @@ button:hover {
     right:22px;
     font-size: 36px;
 }
-#main{
+main{
     transition: 0.5s;
     font-family: Calibri, serif;
     display: flex;
@@ -138,7 +138,7 @@ button:hover {
 
 }
 
-#main h1,h2{
+main h1,h2{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -160,7 +160,7 @@ button:hover {
     margin-right: 2%;
 }
 
-#main section {
+main section {
     display: flex;
     flex-direction: column;
 }
@@ -169,7 +169,7 @@ button:hover {
     height: 80px;
     margin-top: 10px;
 }
-#main section {
+main section {
     display: flex;
     flex-direction: column;
     gap: 15px;

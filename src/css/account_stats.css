@@ -118,32 +118,6 @@ td, th {
     padding: 8px;
 }
 
-#main{
-    transition: 0.5s;
-    font-family: Calibri, serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#main h1{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-#main h2{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    font-family: Calibri, serif, sans-serif;
-}
-
-#main img {
-    width: 40%;
-    height: 40%;
-    position: center;
-}
 
 
 .flex-container {

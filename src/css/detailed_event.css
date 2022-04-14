@@ -96,7 +96,7 @@ body {
     font-size: 36px;
 }
 
-#main{
+main{
     transition: 0.5s;
     font-family: Calibri, serif;
     display: flex;
@@ -104,22 +104,17 @@ body {
     justify-content: center;
 }
 
-#main h1{
+main h1{
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-#main h2{
+main h2{
     display: flex;
     justify-content: left;
     flex-direction: row;
     margin-left: 8%;
-}
-
-#main section {
-    display: flex;
-    flex-direction: column;
 }
 
 .event-location-image{

@@ -63,7 +63,7 @@ body {
 
 .flex-container-update{
     font-family: Calibri, serif;
-    font-size: x-large;
+    font-size: xx-large;
     display: flex;
     justify-content: center;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 25%;
     padding: 12px 200px 12px 40px;
     margin: 8px 0;
     display: inline-block;

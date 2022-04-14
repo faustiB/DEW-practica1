@@ -133,24 +133,24 @@ button:hover {
     right:22px;
     font-size: 36px;
 }
-#main{
+main{
     transition: 0.5s;
     font-family: Calibri, serif;
 }
-#main h1{
+main h1{
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-#main section{
+main section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
 
 }
-#main section article{
+main section article{
     display: flex;
     margin-left: 20%;
     border-style:groove ;
