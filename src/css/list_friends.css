@@ -137,7 +137,7 @@ main{
     transition: 0.5s;
     font-family: Calibri, serif;
 }
-main h1{
+main h2{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -219,7 +219,7 @@ footer{
 }
 .flex-container-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: right;
     align-items: flex-end;

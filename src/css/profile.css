@@ -142,7 +142,6 @@ main h2{
 main img {
     width: 40%;
     height: 40%;
-    position: center;
 }
 
 
@@ -197,7 +196,7 @@ footer {
 }
 .flex-container-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: right;
     align-items: flex-end;
